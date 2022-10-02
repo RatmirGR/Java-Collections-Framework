@@ -393,7 +393,7 @@ class MyLinkedList{
             if (curIndex == index - 1) {
                 tmp.setNext(tmp.getNext().getNext());
                 size--;
-                return;
+                break;
             }
             tmp = tmp.getNext();
             curIndex++;
