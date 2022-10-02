@@ -354,5 +354,6 @@ public class ListExample {
         new ExSpliterator().method(); System.out.println("---------------------");
         new ExLinkedList().method(); System.out.println("---------------------");
         new SomeCollectionAlgorithms().method(); System.out.println("---------------------");
+        new BlockArrayAndLinkedList().method(); System.out.println("---------------------");
     }
 }
