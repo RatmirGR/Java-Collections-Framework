@@ -306,6 +306,44 @@ class SomeCollectionAlgorithms{
 
 /*---------------------------------------------------------------------*/
 
+/* сравнение ArrayList и LinkedList*/
+class BlockArrayAndLinkedList{
+    void method(){
+        List<Integer> arrayList = new ArrayList<>();
+        List<Integer> linkedList = new LinkedList<>();
+
+        System.out.println("ArrayList - time:");
+        measureTime(arrayList);
+        System.out.println("LinkedList - time:");
+        measureTime(linkedList);
+    }
+
+    private static void measureTime(List<Integer> list){
+        /*----- добавление в конец -----*/
+        for (int i = 0; i < 100000; i++) {
+            list.add(i);
+        }
+
+        /*----- получение -----*/
+        for (int i = 0; i < 100000; i++) {
+            list.get(i);
+        }
+
+        long start = System.currentTimeMillis();
+
+        /*----- добавление в начало -----*/
+        for (int i = 0; i < 100000; i++) {
+            list.add(0, i);
+        }
+
+        long end = System.currentTimeMillis();
+
+        System.out.println(end - start);
+    }
+}
+
+/*---------------------------------------------------------------------*/
+
 public class ListExample {
     public static void main(String[] args) {
         new ExArrayList1().method(); System.out.println("---------------------");
