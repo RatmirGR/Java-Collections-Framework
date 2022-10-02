@@ -24,7 +24,7 @@
   </tr>
   <tr>
     <td>конец</td>
-    <td>O(1)</td>
+    <td>O(n)</td>
     <td>O(1)</td>
     <td>O(1)</td>
   </tr>
