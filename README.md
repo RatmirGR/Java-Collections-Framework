@@ -35,3 +35,39 @@
   <li>выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры через итератор после создания списка</li>
   <li>может содержать null-элементы</li>
 </ul> 
+
+======================== класс LinkedList =======================
+/*_______________________________________________________________
+ * | add() | add(index,element) | get() | remove() | contains() |
+ * |  O(1) |        O(n)        |  O(n) |   O(n)   |    O(n)    |
+ * ______________________________________________________________*/
+ 
+ <h2>Временная сложность (Big-O):</h2>
+<table>
+   <tr>
+    <td>add()</td>
+    <td>add(index,element)</td>
+    <td>get()</td>
+    <td>remove()</td>
+    <td>contains()</td>
+  </tr>
+  <tr>
+    <td align="center">O(1)</td>
+    <td align="center">O(n)</td>
+    <td align="center">O(n)</td>
+    <td align="center">O(n)</td>
+    <td align="center">O(n)</td>
+  </tr>
+</table>
+/* Описание:
+ * - реализован в виде двусвязанного списка
+ * - иерархия: Iterable -> Collection -> List -> AbstractSequentialList -> LinkedList
+ * - расширяет AbstractSequentialList<E>
+ * - реализует List<E>, Deque<E>, Cloneable , Serializable
+ * - потоко-небезопасен
+ * - для работы в многопоточном режиме стоит использовать обертку:
+ *     List list = Collections.synchronizedList(new LinkedList(...));
+ * - выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры
+ *   через итератор после создания списка
+ * - может содержать null-элементы
+ * */
