@@ -1,6 +1,6 @@
 # Java-Collections-Framework
 
-<p> - <a href="https://github.com/RatmirW/Java-Collections-Framework/blob/main/ListExample.java">List</a></p>
+<p> - <a href="https://github.com/RatmirW/Java-Collections-Framework/blob/main/ListExample.java">List, ArrayList, LinkedList</a></p>
 
 ======================== класс ArrayList ========================
 <h2>Временная сложность (Big-O):</h2>
