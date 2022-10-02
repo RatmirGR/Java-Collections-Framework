@@ -64,5 +64,4 @@
   <li>для работы в многопоточном режиме стоит использовать обертку: List list = Collections.synchronizedList(new LinkedList(...));</li>
   <li>выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры через итератор после создания списка</li>
   <li>может содержать null-элементы</li>
-  <li></li>
 </ul> 
