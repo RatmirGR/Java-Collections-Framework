@@ -16,10 +16,10 @@
   <tr>
     <td align="center">O(1)</td>
     <td align="center">O(n)</td>
-    <td>O(1)</td>
-    <td>O(n)</td>
-    <td>O(n)</td>
-    <td>O(n)</td>
+    <td align="center">O(1)</td>
+    <td align="center">O(n)</td>
+    <td align="center">O(n)</td>
+    <td align="center">O(n)</td>
   </tr>
 </table>
 
