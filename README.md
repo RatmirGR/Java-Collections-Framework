@@ -38,7 +38,5 @@
   <li>для работы в многопоточном режиме стоит использовать обертку: List list = Collections.synchronizedList(new ArrayList(...));</li>
   <li>Операции size , isEmpty , get , set , iterator и listIterator выполняются за постоянное время</li>
   <li>выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры через итератор после создания списка</li>
-  <li></li>
-  <li></li>
 </ul> 
 <p> - <a href="">ArrayList</a></p>
