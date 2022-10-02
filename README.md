@@ -4,29 +4,21 @@
 
 =================================== класс ArrayList ===================================
 <table>
-  <tr>
-    <td>позиция:</td>
-    <td>добавление:</td>
-    <td>получение:</td>
-    <td>удаление:</td>
+   <tr>
+    <td>add()</td>
+    <td>add(index,element)</td>
+    <td>get()</td>
+    <td>remove()</td>
+    <td>indexOf()</td>
+    <td>contains()</td>
   </tr>
   <tr>
-    <td>начало</td>
-    <td>O(1)</td>
     <td>O(1)</td>
     <td>O(n)</td>
-  </tr>
-  <tr>
-    <td>середина</td>
     <td>O(1)</td>
-    <td>O(1)</td>
-    <td>O(n/2)</td>
-  </tr>
-  <tr>
-    <td>конец</td>
-    <td>O(1)</td>
-    <td>O(1)</td>
-    <td>O(1)</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
+    <td>O(n)</td>
   </tr>
 </table>
 
