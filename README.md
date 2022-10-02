@@ -54,15 +54,15 @@
     <td align="center">O(n)</td>
   </tr>
 </table>
-/* Описание:
- * - реализован в виде двусвязанного списка
- * - иерархия: Iterable -> Collection -> List -> AbstractSequentialList -> LinkedList
- * - расширяет AbstractSequentialList<E>
- * - реализует List<E>, Deque<E>, Cloneable , Serializable
- * - потоко-небезопасен
- * - для работы в многопоточном режиме стоит использовать обертку:
- *     List list = Collections.synchronizedList(new LinkedList(...));
- * - выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры
- *   через итератор после создания списка
- * - может содержать null-элементы
- * */
+<h2>Описание:</h2>
+<ul>
+  <li>реализован в виде двусвязанного списка</li>
+  <li>иерархия: Iterable -> Collection -> List -> AbstractSequentialList -> LinkedList</li>
+  <li>расширяет AbstractSequentialList<E></li>
+  <li>реализует List<E>, Deque<E>, Cloneable , Serializable</li>
+  <li>потоко-небезопасен</li>
+  <li>для работы в многопоточном режиме стоит использовать обертку: List list = Collections.synchronizedList(new LinkedList(...));</li>
+  <li>выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры через итератор после создания списка</li>
+  <li>может содержать null-элементы</li>
+  <li></li>
+</ul> 
