@@ -4,7 +4,7 @@
 
 ======================== класс ArrayList =======================
 <h2>Временная сложность (Big-O):</h2>
-<table align="center">
+<table>
    <tr>
     <td>add()</td>
     <td>add(index,element)</td>
@@ -14,8 +14,8 @@
     <td>contains()</td>
   </tr>
   <tr>
-    <td>O(1)</td>
-    <td>O(n)</td>
+    <td align="center">O(1)</td>
+    <td align="center">O(n)</td>
     <td>O(1)</td>
     <td>O(n)</td>
     <td>O(n)</td>
