@@ -2,7 +2,7 @@
 
 <p> - <a href="https://github.com/RatmirW/Java-Collections-Framework/blob/main/ListExample.java">List</a></p>
 
-======================== класс ArrayList ========================
+======================== класс ArrayList =======================
 <table>
    <tr>
     <td>add()</td>
