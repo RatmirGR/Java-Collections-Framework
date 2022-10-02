@@ -6,26 +6,26 @@
 <table>
   <tr>
     <td>позиция:</td>
-    <td>начало</td>
-    <td>середина</td>
-    <td>конец</td>
-  </tr>
-  <tr>
     <td>добавление:</td>
-    <td>O(n)</td>
-    <td>O(n/2)</td>
-    <td>O(1)</td>
-  </tr>
-  <tr>
     <td>поиск:</td>
-    <td>O(1)</td>
-    <td>O(1)</td>
-    <td>O(1)</td>
+    <td>удаление:</td>
   </tr>
   <tr>
-    <td>удаление:</td>
+    <td>начало</td>
     <td>O(n)</td>
+    <td>O(1)</td>
+    <td>O(n)</td>
+  </tr>
+  <tr>
+    <td>середина</td>
     <td>O(n/2)</td>
+    <td>O(1)</td>
+    <td>O(n/2)</td>
+  </tr>
+  <tr>
+    <td>конец</td>
+    <td>O(1)</td>
+    <td>O(1)</td>
     <td>O(1)</td>
   </tr>
 </table>
