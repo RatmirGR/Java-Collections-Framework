@@ -28,16 +28,15 @@
   </tr>
 </table>
 
-/* Описание:
-* - реализован в виде динамического массива
-* - иерархия: Iterable -> Collection -> List -> AbstractList -> ArrayList
-* - расширяет AbstractList <E>
-* - реализует List <E>, RandomAccess , Cloneable , Serializable
-* - потоко-небезопасен
-* - для работы в многопоточном режиме стоит использовать обертку:
-*     List list = Collections.synchronizedList(new ArrayList(...));
-* - Операции size , isEmpty , get , set , iterator и listIterator выполняются за постоянное время
-* - выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры
-*   через итератор после создания списка
-* */
+<h2>Описание:</h2>
+- реализован в виде динамического массива
+- иерархия: Iterable -> Collection -> List -> AbstractList -> ArrayList
+- расширяет AbstractList <E>
+- реализует List <E>, RandomAccess , Cloneable , Serializable
+- потоко-небезопасен
+- для работы в многопоточном режиме стоит использовать обертку:
+    List list = Collections.synchronizedList(new ArrayList(...));
+- Операции size , isEmpty , get , set , iterator и listIterator выполняются за постоянное время
+- выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры
+  через итератор после создания списка
 <p> - <a href="">ArrayList</a></p>
