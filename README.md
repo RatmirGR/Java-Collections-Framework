@@ -1,5 +1,7 @@
 # Java-Collections-Framework
 
+<p> - <a href="https://github.com/RatmirW/Java-Collections-Framework/blob/main/ListExample.java">List</a></p>
+
 =================================== класс ArrayList ===================================
 <table>
   <tr>
@@ -39,4 +41,3 @@
   <li>Операции size , isEmpty , get , set , iterator и listIterator выполняются за постоянное время</li>
   <li>выдает исключение ConcurrentModificationException, если происходит попытка изменения структуры через итератор после создания списка</li>
 </ul> 
-<p> - <a href="https://github.com/RatmirW/Java-Collections-Framework/blob/main/ListExample.java">List</a></p>
