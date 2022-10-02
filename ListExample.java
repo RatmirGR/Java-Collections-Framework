@@ -344,6 +344,122 @@ class BlockArrayAndLinkedList{
 
 /*---------------------------------------------------------------------*/
 
+/* собственная реализация односвязанного списка*/
+class MyLinkedList{
+
+    private Node head;
+    private int size;
+
+    public void add(int value){
+        if (head == null){
+            head = new Node(value);
+        } else{
+            Node tmp = head;
+
+            while (tmp.getNext() != null) {
+                tmp = tmp.getNext();
+            }
+            tmp.setNext(new Node(value));
+        }
+        size++;
+    }
+
+    public int get(int index){
+        int curIndex = 0;
+        Node tmp = head;
+
+        while (tmp != null) {
+            if (curIndex == index) {
+                return tmp.getValue();
+            }
+            tmp = tmp.getNext();
+            curIndex++;
+        }
+
+        throw new IllegalArgumentException();
+    }
+
+    public void remove(int index) {
+        if (index == 0) {
+            head = head.getNext();
+            size--;
+            return;
+        }
+
+        int curIndex = 0;
+        Node tmp = head;
+
+        while (tmp != null) {
+            if (curIndex == index - 1) {
+                tmp.setNext(tmp.getNext().getNext());
+                size--;
+                return;
+            }
+            tmp = tmp.getNext();
+            curIndex++;
+        }
+    }
+
+    @Override
+    public String toString(){
+        int[] result = new int[size];
+
+        int idx = 0;
+        Node tmp = head;
+
+        while (tmp != null){
+            result[idx++] = tmp.getValue();
+            tmp = tmp.getNext();
+        }
+
+        return Arrays.toString(result);
+    }
+
+    private static class Node{
+        private int value;
+        private Node next;
+
+        public Node(int value) {
+            this.value = value;
+        }
+
+        public int getValue() {
+            return value;
+        }
+
+        public Node getNext() {
+            return next;
+        }
+
+        public void setNext(Node next) {
+            this.next = next;
+        }
+    }
+}
+
+class BlockMyLinkedList{
+    void method(){
+        MyLinkedList list = new MyLinkedList();
+        list.add(1);
+        list.add(2);
+        list.add(10);
+
+        System.out.println(list);
+
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
+        System.out.println(list.get(2));
+
+        list.remove(0);
+        list.remove(1);
+        list.remove(2);
+
+        System.out.println(list);
+    }
+}
+
+/*---------------------------------------------------------------------*/
+
 public class ListExample {
     public static void main(String[] args) {
         new ExArrayList1().method(); System.out.println("---------------------");
@@ -355,5 +471,6 @@ public class ListExample {
         new ExLinkedList().method(); System.out.println("---------------------");
         new SomeCollectionAlgorithms().method(); System.out.println("---------------------");
         new BlockArrayAndLinkedList().method(); System.out.println("---------------------");
+        new BlockMyLinkedList().method(); System.out.println("---------------------");
     }
 }
