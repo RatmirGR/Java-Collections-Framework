@@ -18,7 +18,7 @@
   </tr>
   <tr>
     <td>середина</td>
-    <td>O(n/2)</td>
+    <td>O(1)</td>
     <td>O(1)</td>
     <td>O(n/2)</td>
   </tr>
