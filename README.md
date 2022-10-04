@@ -78,7 +78,7 @@ Set -
     <td>put()</td>
     <td>get()</td>
     <td>remove()</td>
-    <td>containsKey()</td>
+    <td>ContainsKey()</td>
   </tr>
   <tr>
     <td align="center">O(1)</td>
@@ -116,7 +116,7 @@ Set -
     <td>put()</td>
     <td>get()</td>
     <td>remove()</td>
-    <td>contains()</td>
+    <td>ContainsKey()</td>
   </tr>
   <tr>
     <td align="center">O(1)</td>
@@ -156,7 +156,7 @@ Set -
     <td>put()</td>
     <td>get()</td>
     <td>remove()</td>
-    <td>contains()</td>
+    <td>ContainsKey()</td>
   </tr>
   <tr>
     <td align="center">O(log n)</td>
