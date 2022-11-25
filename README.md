@@ -3,9 +3,7 @@
 Java Collections Framework - это набор связанных классов и интерфейсов, реализующих часто используемых коллекций структур данных
 _________________________________________________________________
 
-List -
-Map -
-Set -
+<img src=""https://github.com/RatmirGR/Java-Collections-Framework/blob/main/java-collections.png" width="600" height="300"/>
 
 ======================== класс ArrayList ========================
 <h2>Временная сложность (Big-O):</h2>
